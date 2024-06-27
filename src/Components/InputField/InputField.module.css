@@ -1,0 +1,21 @@
+.input {
+    background-color: var(--background-1);
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: var(--size-2);
+    border: 2px solid var(--background-1);
+}
+
+.input:focus {
+    border: 2px solid var(--accent-color);
+}
+
+.input_error {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: var(--size-1);
+}

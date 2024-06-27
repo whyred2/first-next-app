@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --black-1: hsl(0, 0%, 0%);
+  --black-2: hsl(0, 0%, 5%);
+  --black-3: hsl(0, 0%, 10%);
+  --black-4: hsl(0, 0%, 15%);
+  --black-5: hsl(0, 0%, 20%);
+
+  --size-1: 14px;
+  --size-2: 16px;
+  --size-3: 18px;
+  --size-4: 20px;
+  --size-5: 22px;
+  --size-6: 24px;
+  --size-7: 26px;
+  --size-8: 28px;
+  --size-9: 20px;
+  --size-10: 32px;
+
+  --input-color: #24222a;
+
+  --select-item: rgba(255, 255, 255, 0.1);
+  --active-item: #d2224d;
+
+  --background-1: #24222a; 
+  --background-2: #2e2c35;
+  --background-3: #35333e;
+
+  --accent-color: #8662f3;
+  --accent-color-hover: #8662f3b2;
+
+  --text: #655f76;
+  --text-hover: #a59bc2;
+
+  --text-span: #7e7b88;
+
+  --purple-text: #c2b8e0;
+  --white-text: #ffffff;
+  --black-text: #000000;
+
+  --content-size: 1300px;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.Toastify__toast-theme--dark {
+  background-color: var(--background-2) !important;
+  font-size: var(--size-2);
+  width: 400px;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: var(--white-text);
+  background-color: var(--background-1);
+  margin: 0 auto;
+  font-size: var(--size-6);
+  min-height: 100vh;
+  max-width: min(var(--content-size), 100vw - 2em);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.Toastify__toast {
+  font-size: var(--size-3);
+  font-family: inherit !important;
+}
+
+.svg-logo {
+  fill: var(--accent-color);
+  filter: drop-shadow(0 0 0.3em hsl(var(--accent-color), 0.6)) drop-shadow(0 0 2.1em hsl(var(--accent-color), 0.6));
+}
+
+.footer__icon-small {
+  font-size: 12px; 
+}
+
+.footer__icon-large {
+  font-size: 24px;
+}
+
+.main_btn,
+.regular_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 5px;
+  transition: background-color .3s ease;
+  font-size: var(--size-5);
+}
+
+.main_btn {
+  background-color: var(--accent-color);
+}
+
+.main_btn:hover, 
+.main_btn:focus {
+  background-color: var(--accent-color-hover);
+}
+
+.main_btn:active {
+  background-color: var(--active-item);
+}
+

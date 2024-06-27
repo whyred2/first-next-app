@@ -1,0 +1,55 @@
+.auth {
+    background-color: var(--background-2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px;
+}
+
+.auth {
+    z-index: 10;
+}
+
+.header_p {
+    color: var(--text-span);
+}
+
+.line {
+    height: 1px;
+    background-color: var(--background-1);
+}
+
+.span {
+    background-color: var(--background-2);
+}
+
+.loader {
+    width: 24px;
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(360deg); }
+}
+
+.auth_footer {
+    margin-top: -1.5rem;
+    padding-top: 1.5rem;
+    background-color: var(--background-3);
+    font-size: var(--size-3);
+    border-radius: 15px;
+    width: 450px;
+}
+
+.footer_action {
+    padding: 1rem 2rem;
+}
+
+.link {
+    color: var(--text);
+    transition: color .3s ease;
+}
+
+.link:hover {
+    color: var(--text-hover);
+}
